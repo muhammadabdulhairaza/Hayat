@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zara Clinic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="images/Adobe Express - file.png" type="image/x-icon"> 
+    <style>
+        body {
+            padding-top: 70px;
+            background: url('images/F444.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .navbar {
+            background: rgba(0, 0, 0, 0.7) !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-weight: bold;
+            transition: 0.3s ease-in-out;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #f5c518 !important;
+        }
+        .hero-img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .highlight-text {
+            color: gold;
+            font-weight: 800;
+        }
+        .content-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+        }
+        .animated-section {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+       /* Footer Styling */
+       .footer {
+            background: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .image-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        @media (max-width: 576px) {
+            .count-title {
+                font-size: 1.5rem;
+            }
+            .count-text {
+                font-size: 0.9rem;
+            }
+            .navbar-brand img {
+                width: 60px;
+                height: 60px;
+            }
+            .image-gallery img {
+                margin-bottom: 10px;
+            }
+            .display-3 {
+                font-size: 2rem;
+            }
+        }
+        @media (max-width: 768px) {
+            .navbar .btn {
+                margin-bottom: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/Adobe Express - file.png" alt="Zara Clinic Logo" width="75" height="75"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="Index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="About Us.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Our products.html">Our Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contact Us.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Consultations.html">Consultations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Feedback.html">Feedback</a></li>
+
+                </ul>
+               
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 animated-section">
+        <h1 class="display-3 text-center fw-bold">About Us</h1>
+        <p class="text-center text-light mb-4">At Zara Clinic, we believe in holistic healing, personalized care, and long-term wellness.</p>
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12 mb-4">
+                <div class="content-box text-light">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, optio?</p>
+                    <p>Our dedicated team works around the clock to ensure each client feels safe, understood, and rejuvenated.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 text-center">
+                <img src="images/F55.jpg" alt="Clinic Image" class="hero-img img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-dark text-light p-5 text-center">
+        <h2 class="display-4">Perfection in <span class="highlight-text">Healthcare</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, dolorum.</p>
+    </div>
+
+    <div class="container mt-5 image-gallery">
+        <h2 class="text-center text-light mb-4">Our Facilities</h2>
+        <div class="row">
+            <div class="col-md-4"><img src="images/F1.jpg" alt="Facility 1"></div>
+            <div class="col-md-4"><img src="images/F2.jpg" alt="Facility 2"></div>
+            <div class="col-md-4"><img src="images/F3.jpg" alt="Facility 3"></div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row text-center">
+            <div class="col-md-3 col-6 mb-4">
+                <div class="counter text-light">
+                    <h2 class="count-title">100+</h2>
+                    <p class="count-text">Happy Patients</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 mb-4">
+                <div class="counter text-light">
+                    <h2 class="count-title">1700+</h2>
+                    <p class="count-text">Successful Treatments</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 mb-4">
+                <div class="counter text-light">
+                    <h2 class="count-title">20+</h2>
+                    <p class="count-text">Years of Experience</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 mb-4">
+                <div class="counter text-light">
+                    <h2 class="count-title">500+</h2>
+                    <p class="count-text">Positive Reviews</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- Footer -->
+   <footer class="footer">
+    <p>© 2025 Zara Clinic | All rights reserved.</p>
+    <p>123 Wellness Street, City | Email: support@zaraclinic.com</p>
+    <div>
+        <a href="#" class="text-light mx-2"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-light mx-2"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="text-light mx-2"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-light mx-2"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="text-light mx-2"><i class="bi bi-youtube"></i></a>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

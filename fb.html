@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Zara Therapy Clinic</title>
+    <link rel="shortcut icon" href="1-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/feedback.css">
+    <style>
+        body {
+            background-color: #f4f7fa;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar, footer {
+            background-color: #3c6e71;
+            color: white;
+        }
+
+        .navbar a {
+            color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+        }
+
+        .btn-primary {
+            background-color: #2a4d68;
+            border-color: #2a4d68;
+        }
+
+        .btn-primary:hover {
+            background-color: #3c6e71;
+        }
+
+        .accordion-button {
+            background-color: #2a4d68;
+            color: white;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: #3c6e71;
+        }
+
+        .footer-info-single ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .rate-box label {
+            font-size: 1.5em;
+            color: #2a4d68;
+            cursor: pointer;
+        }
+
+        .rate-box input[type="radio"]:checked ~ label {
+            color: #f4a261;
+        }
+
+        .submit-btn {
+            background-color: #2a4d68;
+            border: none;
+            color: white;
+            font-size: 1.25rem;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #3c6e71;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark p-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/Capture.PNG" height="40px" alt="Zara Therapy Clinic Logo">
+            </a>
+            <a href="Appointment.html" class="btn btn-outline-light">Make an Appointment</a>
+        </div>
+    </nav>
+
+
+    <div class="conatiner">
+        <div class="row">
+          <div class="col">
+            <h1 class="text-center display-3 fw-bold">FeedBAck Form</h1>
+          </div>
+        </div>
+        <div class="row">
+         <div class="col">
+          <form>
+            <div class="a m-4">
+            <div class="wrapper"> 
+             
+                <div class="title text-warning">Rate your experience</div>
+                <div class="content">We highly value your feedback! Kindly take a moment to rate your experience and provide us with your valuable feedback.</div>
+                <div class="rate-box">
+                  <input type="radio" name="star" id="star0"/>
+                  <label class="star" for="star0"></label>
+                  <input type="radio" name="star" id="star1"/>
+                  <label class="star" for="star1"></label>
+                  <input type="radio" name="star" id="star2" checked="checked"/>
+                  <label class="star" for="star2"></label>
+                  <input type="radio" name="star" id="star3"/>
+                  <label class="star" for="star3"></label>
+                  <input type="radio" name="star" required id="star4"/>
+                  <label class="star" for="star4"></label>
+                </div>
+                <textarea cols="30" rows="6" placeholder="Tell us about your experience!" required></textarea>
+                <!-- <div class="submit-btn" type="submit">Send</div> -->
+                <button class="submit-btn btn-lg col-12 bg-warning m-2" onclick="submitt()" value="0">Send</button>
+                
+              </div>
+              <!-- 3. Apply the following CSS code to style yo -->
+          
+          </form>
+         </div>
+         <!-- <div class="col">
+          <img src="imges/1.jpg" alt="" height="500px" width="200px">
+         </div> -->
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      </div>
+      
+      
+      
+      <script>
+      
+        function submitt(){
+         
+        
+            alert("Thanks for your FeedBack");
+         
+        
+        
+        
+        }
+        
+        
+        
+        </script> 
+      
+
+    <div class="container py-5">
+        <h2 class="text-center text-primary fw-bolder mb-4">Therapy Feedback Questions</h2>
+        <div class="accordion" id="therapyFeedbackAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        How would you rate your overall therapy experience?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse">
+                    <div class="accordion-body">Please rate your experience on a scale of 1 to 5.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-primary text-white py-4 text-center">
+        <p>Embrace the serenity of nature. Let the breeze refresh your soul and the beauty of the earth inspire your journey.</p>
+        <p>&copy; 2025 Zara Therapy Clinic | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function submitt() {
+            alert("Thanks for your Feedback!");
+        }
+    </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
